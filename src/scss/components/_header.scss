@@ -1,0 +1,23 @@
+.header {
+
+    & h1{
+        @include semibold;
+        font-size: 60px;
+        color: $blue;
+        text-align: center;
+    }
+
+    & h2{
+        @include semibold;
+        font-size: 18px;
+        color: $blue;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-top: 10px;
+    }
+}
+
+#header-span{
+    color: $green
+}

@@ -1,0 +1,33 @@
+@mixin light {
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@mixin medium{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+@mixin semibold{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+$blue: #426799;
+$grey: #F2FAFF;
+$green: #7FD1AE;
+$purple: #96ADCF;
+$black: #000000;
+$white: #FFFFFF;
+
+.flex{
+    display: flex;
+}
+
+.container-body{
+    padding: 0 16%;
+}
+
+.container-main{
+    padding: 0 5%;
+}
