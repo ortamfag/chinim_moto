@@ -1,0 +1,36 @@
+.search{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-top: 70px;
+
+    &__item{
+      margin-right: 20px;
+
+      & p{
+        @include medium;
+        font-size: 22px;
+        color: $blue;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__button button{
+      background: $green;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      @include medium;
+      font-size: 22px;
+      color: $white;
+      padding: 12px 64px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $white;
+        color: $green;
+        transition: 0.4s;
+      }
+    }
+}

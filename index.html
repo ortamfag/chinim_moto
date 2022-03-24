@@ -37,10 +37,10 @@
                 <div class="search__item">
                     <p>Искать по марке мотоцикла</p>
 
-                    <div class="select-box choose-position">
-                        <select required style="width: 38% !important;" class="position-select">
+                    <div class="select-box choose-position choose-position-1">
+                        <select required class="position-select">
                             <option value="" disabled selected>Марка мотоцикла</option>
-                            <option value="AL">Alabama</option>
+                            <option class="option" value="AL">Alabama</option>
                             <option value="WY">Wyoming</option>
                         </select>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="search__item">
                     <p>Искать по марке мотоцикла</p>
 
-                    <div class="select-box choose-position">
+                    <div class="select-box choose-position choose-position-2">
                         <select required class="position-select">
                             <option value="" disabled selected>Марка мотоцикла</option>
                             <option value="AL">Alabama</option>
@@ -59,8 +59,17 @@
                 </div>
 
                 <div class="search__button">
-                    <button>Найти</button>
+                    <a href="#"><button>Найти</button></a>
                 </div>
+            </div>
+        </section>
+
+        <section id="models">
+            <div class="models">
+                <div class="switch-button">
+                    <input class="switch-button-checkbox" type="checkbox"></input>
+                    <label class="switch-button-label" for=""><span class="switch-button-label-span">Популярные</span></label>
+                  </div>
             </div>
         </section>
     </main>
