@@ -1,0 +1,74 @@
+
+  .choose-position .select2-container {
+    width: 21vw !important;
+  }
+  
+  .choose-position .select2-container--default .select2-selection--single {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding: 15px 26px;
+    height: 50px;
+    @include light;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .choose-position span.select2-selection.select2-selection--single {
+    outline: none;
+  }
+  
+  .choose-position .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 0px;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 35px;
+    width: 0px;
+  }
+  
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-image: url(../img/green-triangle-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none !important;
+    height: 20px !important;
+    width: 20px !important;
+    margin: auto !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+
+  .search{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+
+    &__item{
+      margin-right: 20px;
+
+      & p{
+        @include medium;
+        font-size: 22px;
+        color: $blue;
+      }
+    }
+
+    &__button button{
+      background: $green;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      @include medium;
+      font-size: 22px;
+      color: $white;
+      padding: 12px 64px;
+    }
+
+    &__button div{
+      min-height: 18px;
+    }
+}

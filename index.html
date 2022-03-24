@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Чиним мото</title>
     <link href="src/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 
@@ -34,22 +37,35 @@
                 <div class="search__item">
                     <p>Искать по марке мотоцикла</p>
 
-                    <form>
-                        <div class="search__select">
-                            <div class="search__select-disactive">
-                                <p>Марка мотоцикла</p>
-                                <img src="src/img/green-triangle-down.svg" alt="стрелка вниз">
-                            </div>
+                    <div class="select-box choose-position">
+                        <select required style="width: 38% !important;" class="position-select">
+                            <option value="" disabled selected>Марка мотоцикла</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
 
-                            <div class="search__select-item"></div>
-                        </div>
-                    </form>
+                <div class="search__item">
+                    <p>Искать по марке мотоцикла</p>
+
+                    <div class="select-box choose-position">
+                        <select required class="position-select">
+                            <option value="" disabled selected>Марка мотоцикла</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search__button">
+                    <button>Найти</button>
                 </div>
             </div>
         </section>
     </main>
 
-
+<script src="src/js/script.js"></script>
 </body>
 
 </html>
