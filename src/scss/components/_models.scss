@@ -156,3 +156,105 @@
       }
     }
   }
+
+  .switch-button-eng {
+    background: $white;
+    overflow: hidden;
+    width: 310px;
+    text-align: center;
+    padding-right: 120px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    @include medium;
+    font-size: 22px;
+
+  }
+
+  .switch-button {
+  
+    &-checkbox-eng {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 2;
+  
+      &:checked + .switch-button-label:before {
+        transform: translateX(120px);
+        transition: transform 200ms linear;
+        z-index: 5;
+        width: 70%;
+        left: 57px;
+
+      }
+
+      &:checked + .switch-button-label {
+        color: $purple;
+        transition: 300ms linear;
+      }
+
+      &:checked + .switch-button-label:after {
+        color: $white;
+        transition: 300ms linear;
+        z-index: 6;
+      }
+  
+      & + .switch-button-label {
+        position: relative;
+        padding: 15px 0;
+        display: block;
+        user-select: none;
+        pointer-events: none;
+        color: $white;
+  
+        &:before {
+          content: "";
+          background: $green;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 35px;
+          transform: translateX(0);
+          transition: transform 300ms;
+        }
+
+        &:after {
+            content: "All";
+            color: $purple;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 200px;
+            width: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            pointer-events: none;
+          }
+
+        
+  
+        .switch-button-label-span {
+          position: relative;
+          z-index: 4
+        }
+      }
+    }
+  }
+
+.none{
+  display: none;
+}
+
+.real{
+  display: block
+}

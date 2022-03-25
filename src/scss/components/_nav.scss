@@ -19,10 +19,12 @@
 
             & img:nth-child(1){
                 margin-bottom: 2px;
+                cursor: pointer;
             }
 
             & img:nth-child(2){
                 margin-top: 2px;
+                cursor: pointer;
             }
     }
 }
