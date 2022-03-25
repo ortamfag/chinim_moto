@@ -21,3 +21,16 @@
 #header-span{
     color: $green
 }
+
+
+@media (max-width: 700px) {
+    .header {
+        & h1{
+            font-size: 29px;
+        }
+
+        & h2{
+            font-size: 15px;
+        }
+    }
+}

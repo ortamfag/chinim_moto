@@ -28,3 +28,13 @@
             }
     }
 }
+
+@media (max-width: 700px){
+    .nav{
+        padding: 45px 25px 100px 25px;
+
+        &__dropdown p{
+            font-size: 18px;
+        }
+    }
+}

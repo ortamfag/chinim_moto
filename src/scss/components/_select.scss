@@ -39,3 +39,15 @@
     top: auto !important;
     left: auto !important;
   }
+
+
+  @media (max-width: 700px) {
+    .choose-position .select2-container {
+      width: 65vw !important;
+    }
+
+    .choose-position{
+      display: flex;
+      justify-content: center;
+    }
+}
