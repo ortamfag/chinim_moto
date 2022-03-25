@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+@import "_const";
+@import "components/_nav";
+@import "components/_header";
+@import "components/_select";
+@import "components/_search";
+@import "components/_modelseng";

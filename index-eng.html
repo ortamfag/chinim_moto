@@ -5,41 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чиним мото</title>
+    <title>Repair Moto</title>
     <link href="src/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet" href="src/css/styleeng.min.css">
 </head>
 
 <body class="container-body">
     <nav class="nav flex">
         <img src="src/img/Logo.svg">
         <div class="nav__dropdown flex">
-            <p id="setLanguage">Русский</p>
+            <p id="setLanguage">English</p>
 
             <div class="nav__dropdown-arrows flex">
-                <img id="dropdown-1" src="src/img/blue-triangle-up.svg" alt="стрелка вверх">
-                <img id="dropdown-2" src="src/img/blue-triangle-down.svg" alt="стрелка вниз">
+                <a href="index-eng.html"><img id="dropdown-1" src="src/img/blue-triangle-up.svg" alt="стрелка вверх"></a>
+                <a href="index.html"><img id="dropdown-2" src="src/img/blue-triangle-down.svg" alt="стрелка вниз"></a>
             </div>
         </div>
     </nav>
 
     <header class="header container-main">
-        <h1 id="header-title">Ремонт китайской мототехники</h1>
-        <h2 id="header-subtitle">здесь про <span id="header-span">ремонт мотоциклов</span> рассказываете вы </h2>
+        <h1 id="header-title">Repair of Chinese motorcycles</h1>
+        <h2 id="header-subtitle">Here you tell about <span id="header-span">Motorcycle repair</span></h2>
     </header>
 
     <main class="main container-main">
         <section id="search">
             <div class="search">
                 <div class="search__item">
-                    <p id="search-p-1">Искать по марке мотоцикла</p>
+                    <p id="search-p-1">Search by motorcycle brand</p>
 
                     <div class="select-box choose-position choose-position-1">
                         <select required class="position-select">
-                            <option id="placeholder-1" value="" disabled selected>Марка мотоцикла</option>
+                            <option id="placeholder-1" value="" disabled selected>Motorcycle brand</option>
                             <option class="option" value="AL">Alabama</option>
                             <option value="WY">Wyoming</option>
                         </select>
@@ -47,11 +47,11 @@
                 </div>
 
                 <div class="search__item">
-                    <p id="search-p-2">Искать по модели мотоцикла</p>
+                    <p id="search-p-2">Search by motorcycle model</p>
 
                     <div class="select-box choose-position choose-position-2">
                         <select required class="position-select">
-                            <option id="placeholder-1" value="" disabled selected>Модель мотоцикла</option>
+                            <option id="placeholder-1" value="" disabled selected>Motorcycle model</option>
                             <option value="AL">Alabama</option>
                             <option value="WY">Wyoming</option>
                         </select>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="search__button">
-                    <a href="#"><button>Найти</button></a>
+                    <a href="#"><button>Search</button></a>
                 </div>
             </div>
         </section>
@@ -68,11 +68,6 @@
             <div class="models">
                 <div class="switch-button">
                     <input class="switch-button-checkbox" type="checkbox"></input>
-                    <label id="label" class="switch-button-label" for=""><span class="switch-button-label-span">Популярные</span></label>
-                </div>
-
-                <div class="switch-button-eng none">
-                    <input class="switch-button-checkbox-eng" type="checkbox"></input>
                     <label id="label" class="switch-button-label" for=""><span class="switch-button-label-span">Popular</span></label>
                 </div>
 
